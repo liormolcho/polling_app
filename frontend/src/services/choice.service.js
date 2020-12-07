@@ -46,7 +46,7 @@ function getChoices(question_url) {
 	const requestOptions = {
 		method: 'GET',
 	};
-	const url = `/api/${question_url}/choices/`;
+	const url = `/api/questions/${question_url}/choices/`;
 
 	return fetch(url, requestOptions).then(handleResponse);
 }

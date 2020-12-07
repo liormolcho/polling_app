@@ -27,7 +27,7 @@ function deleteQuestion(question_url) {
 	const requestOptions = {
 		method: 'DELETE',
 	};
-	const url = `/api/${question_url}/`;
+	const url = `/api/questions/${question_url}/`;
 
 	return fetch(url, requestOptions).then(handleResponse);
 }
@@ -36,7 +36,7 @@ function getQuestion(question_url) {
 	const requestOptions = {
 		method: 'GET',
 	};
-	const url = `/api/${question_url}/`;
+	const url = `/api/questions/${question_url}/`;
 
 	return fetch(url, requestOptions).then(handleResponse);
 }
